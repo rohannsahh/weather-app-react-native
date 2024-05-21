@@ -5,7 +5,7 @@ export const getWeatherByLocality=async(localityId)=>{
        const response = await axios.get(`https://weatherunion.com/gw/weather/external/v0/get_locality_weather_data`, {
         headers:{
             'content-type': 'application/json',
-            'x-zomato-api-key' : '432b7b007db92dc147c317829c62c231'
+            'x-zomato-api-key' : 'weatherapi'
         },
         params:{
             locality_id: localityId
